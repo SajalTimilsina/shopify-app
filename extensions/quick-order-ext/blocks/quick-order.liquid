@@ -1,0 +1,115 @@
+<div class="quick-order-form">
+    <div class="header" style="text-align:{{ block.settings.alignment }};">
+        <h1> {{block.settings.form_title }}</h1>
+    </div>
+    <!-- Top container with search, list dropdown, and cart button -->
+    <div class="header-container">
+        <input type="text" id="productSearch" placeholder="Search Products...">
+        <select id="listDropdown">
+            <option value="Default">Select a list...</option>
+        </select>
+        <button id="goToCartButton" class="go-to-cart-button"><a href="/cart"> Go to Cart</a></button>
+    </div>
+
+    <!-- Filter row with dropdown, checkbox, and more options -->
+    <div class="filter-container">
+        <select class="filter-dropdown">
+            <option value="">Filter options...</option>
+            <option value="sku">SKU</option>
+            <option value="productType">Product Type </option>
+        </select>
+        <div class="more-options">
+            <span>Bulk Options⋮</span>
+            <div class="dropdown-menu">
+                <a href="#" id="bulkAddToCart">Add to Cart</a>
+                <a href="#" id="bulkDelete">Delete</a>
+            </div>
+        </div>
+    </div>
+
+    <table id="productTable">
+        <thead>
+            <tr>
+                <th>Check</th>
+                <th>Image</th>
+                <th>Product</th>
+                <th>Retail Price<br><i style="font-size: 11px;">Clinical price will be applied at checkout</i></th>
+                <th>Quantity</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Product rows will be dynamically inserted here -->
+        </tbody>
+    </table>
+
+</div>
+<div id="loadingOverlay" class="loading-overlay" style="display:none;">
+    <div class="loader">
+        <div class="cross">
+            <p></p>
+        </div>
+    </div>
+</div>
+
+<div class="modal__layout" id="quickListModal">
+    <div class="modal__content">
+        <div class="modal__header">
+            <h3 class="modal__title">Message</h3>
+            <a class="modal__close-icon" aria-label="Close" id="modalCloseIcon">
+                <span class="cs-icon icon-close"></span>
+            </a>
+            <hr>
+        </div>
+        <div>
+            <div class="product-details row">
+          
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Toggle the visibility of the dropdown menu
+    document.querySelector('.more-options').addEventListener('click', function() {
+        const dropdownMenu = this.querySelector('.dropdown-menu');
+        dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+        //this.querySelector('.dropdown-menu').style.display = 'block';
+        //console.log("Dropdown menu display after click:", dropdownMenu.style.display);
+
+    });
+
+    // Hide dropdown menu when clicking elsewhere
+    {% comment %} window.addEventListener('click', function(e) {
+        
+        if (!e.target.matches('.more-options, .more-options *')) {
+            document.querySelector('.dropdown-menu').style.display = 'none';
+        }
+    }); {% endcomment %}
+</script>
+
+
+{%schema%}
+{
+    "name": "Quick Order Form",
+    "target": "section",
+    "class": "app-dashboard-form",
+    "stylesheet": "quick-order.css",
+    "javascript": "quick-order.js",
+    "settings":[
+        {
+            "type": "text",
+            "id": "form_title",
+            "label": "App Form Title"
+        },
+        {
+            "type": "text_alignment",
+            "id": "alignment",
+            "label": "Text Alignment",
+            "default": "center"
+        }
+    ]
+
+}
+
+{%endschema%}

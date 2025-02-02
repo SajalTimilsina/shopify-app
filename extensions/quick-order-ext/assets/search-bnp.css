@@ -1,0 +1,169 @@
+.app-container{
+
+		/* width: 45%; */
+		background-color: white;
+		border: 1px solid #ccc;
+		border-radius: 8px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	    padding: 20px;
+	    font-size: 16px;
+
+	}
+
+	.input-label {
+		font-size: 1.2rem;
+		font-weight: bold;
+
+	}
+
+	.input-group{
+		display: flex;
+		flex-direction: row;
+		gap: 10px;
+	}
+
+
+	.input-field{
+		flex-basis: 75%;
+		outline: none; /* Remove blue outline on focus */
+	    transition: all 0.3s ease; /* Smooth transition for focus effect */
+	    position: relative;
+	    box-sizing: border-box;
+	}
+
+	.clear-button {
+		position: absolute;
+		right: 12px;
+		border: none;
+		/* background: none; */
+		cursor: pointer;
+		display: none;
+		color: #aaa;
+		top: 50%;  /* place element down to 50% of the height of the container */
+	    transform: translateY(-50%); /* move element by 50% of it own shape-image-threshold: ;*/
+	}
+
+
+	.input-field input{
+		width: 100%;
+		padding: 10px;
+		border: 1px solid #ccc; /* Light border color */
+	    border-radius: 5px; /* Rounded corners */
+	    outline: none;
+	    transition: all 0.3s ease;
+	    box-sizing: border-box;
+	}
+
+	.input-field input:focus {
+	  border-color: red; /* Change border color on focus */
+	  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2); /* Subtle shadow on focus */
+	}
+
+	#itemList {
+		position: absolute;
+		list-style-type: none;
+		background-color: white;
+		border: 1px solid #ddd;
+		border-radius: 8px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+	    padding: 0px;
+	    width: 100%;
+	    top:100%;
+	    left: 0;
+	    max-height: 250px;
+	    overflow-y: auto;
+	    z-index: 1000;
+	    margin: 8px 0 0;
+	    display: none;
+	}
+
+	#itemList li {
+		padding: 8px;
+	}
+
+  #itemList li:hover{
+    background-color: #c21515;
+    background-color: var(--color_primary);
+    color: #fff;
+  }
+
+
+	.quantity-button {
+		flex: 1;
+		display: flex;
+		flex-direction: row;
+		gap: 10px;
+		flex-basis: 25%;
+
+	}
+
+	.select-option{
+		flex-basis: 10%;
+		padding: 8px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		outline: none;
+		transition: all 0.3s ease;
+	}
+
+  #optionFieldSelect{
+    flex-basis: 10%;
+		padding: 8px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		outline: none;
+		transition: all 0.3s ease;
+  }
+	/* .select-option::-webkit-inner-spin-button,
+	.select-option::-webkit-outer-spin-button{
+		height: 5%;
+		width: 5%;
+		cursor: pointer;
+	} */
+
+	.select-option:focus {
+	  border-color: red;
+	  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+	}
+
+	.select-option:not(:placeholder-shown) + .add-to-list {
+		background-color: #b71c1c; /* Darker red on hover */
+	    color: white;
+	}
+
+	.add-to-list {
+		flex: 1;
+	  flex-basis: 15%;
+	  padding: 8px;
+	  border: none;
+	  border-radius: 5px;
+	  font-size: 16px;
+	  cursor: pointer;
+	  background-color: lightgrey;
+	  transition: background-color 0.3s ease;
+
+	}
+/*	.add-to-cart:hover {
+	  background-color: #b71c1c; 
+	    color: white;
+
+	}*/
+
+	@media (max-width: 768px) {
+
+	  .app-container {
+	  	width: 80%;
+	  }
+	  .input-group {
+	    flex-direction: column; /* Stack items vertically on mobile */
+	    width: 100%;
+	  }
+
+	  .select-option{
+	  	flex-basis: 40%;
+	  }
+
+	  .add-to-cart{
+	  	flex-basis: 60%;
+	  }
+	}

@@ -1,0 +1,37 @@
+
+<div class="app-container quick-order-form">
+
+	<label class="input-label" for="inputFieldText">Quick Add</label>
+
+	<div class="input-group">
+
+	<div class="input-field">
+		<input type="text" id="inputFieldText" placeholder="Search SKU " oninput="toggleClearButton()">
+		<button class="clear-button" onClick="clearInput()">X</button>
+		<ul id="itemList"></ul>
+	</div>
+
+	<div class="quantity-button">
+		<input type="number" class="select-option" placeholder="Quantity"> 
+		<button class="add-to-list">Add</button>
+	</div>
+</div>
+
+</div>			
+
+
+{% schema %}
+{
+  "name": "Search Form",
+  "target": "section",
+  "class": "app-search-form",
+  "stylesheet": "search-bnp.css",
+  "javascript": "search-bnp.js",
+  "settings": [
+    { "type": "product", "id": "product", "label": "product", "autofill": true },
+    { "type": "color", "id": "colour", "label": "Star Colour", "default": "#ff0000" }
+  ]
+}
+{% endschema %}
+
+

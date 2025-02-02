@@ -1,0 +1,22 @@
+<button class="buynow_button"> BUY NOW AND PAY LATER
+
+</button>
+
+<button class="savecart_button"> Save My Cart
+
+</button>
+
+{% schema %}
+{
+  "name": "Buy Now Pay Later",
+  "target": "section",
+  "class": "app-dashboard-form",
+  "stylesheet": "checkout-bnp.css",
+  "javascript": "checkout-bnp.js",
+  "settings": [
+    { "type": "product", "id": "product", "label": "product", "autofill": true },
+    { "type": "color", "id": "colour", "label": "Star Colour", "default": "#ff0000" }
+  ]
+}
+{% endschema %}
+

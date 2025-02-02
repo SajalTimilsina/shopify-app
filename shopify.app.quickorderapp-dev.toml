@@ -1,0 +1,33 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "e5c0349df7bc54dcdc6def2f374f0249"
+name = "QuickOrderApp_dev"
+handle = "quickorderapp_dev"
+application_url = "https://info-idle-responsible-adoption.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "emertest.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_all_orders,read_customers,read_orders,read_products,read_script_tags,write_customers,write_products,write_script_tags"
+
+[auth]
+redirect_urls = [
+  "https://info-idle-responsible-adoption.trycloudflare.com/auth/callback",
+  "https://info-idle-responsible-adoption.trycloudflare.com/auth/shopify/callback",
+  "https://info-idle-responsible-adoption.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-10"
+
+  [[webhooks.subscriptions]]
+  topics = [ "products/create" ]
+  uri = "/api/webhooks"
+
+[pos]
+embedded = false
