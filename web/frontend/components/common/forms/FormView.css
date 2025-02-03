@@ -1,0 +1,81 @@
+.section {
+  margin-bottom: 20px;
+}
+
+.section-header {
+  font-size: 1.25rem;
+  color: #0056b3;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+}
+
+small {
+  display: block;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.radio-group {
+  margin-top: 10px;
+}
+
+.radio-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: normal;
+}
+
+.specific-customers {
+  margin-top: 10px;
+}
+
+.customer-tag {
+  display: inline-block;
+  background-color: #e9ecef;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  font-size: 0.85rem;
+  color: #333;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  font-size: 0.9rem;
+  color: #ff0000;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.sync-btn {
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  color: #fff;
+  background-color: #0056b3;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.sync-btn:hover {
+  background-color: #003d80;
+}

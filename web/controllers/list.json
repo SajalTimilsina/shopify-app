@@ -1,0 +1,103 @@
+{
+  "customerId": "12345",
+  "productList": [
+      {
+        "id": 8776681881851,
+        "title": "0.2 x 9 mm | TSK Invisible Needles - Low Dead Space | 100 per Box LDS-02009",
+        "vendor": "TSK",
+        "product_type": "Low Dead Space Needles",
+        "handle": "30-gauge-13-mm-tsk-invisible-needles",
+        "tags": "",
+        "variants": [
+          {
+            "id": 46405971181819,
+            "product_id": 8776681881851,
+            "price": "153.00",
+            "sku": "LDS-02009",
+            "title": "Default Title"
+          }
+        ],
+        "images": "https://cdn.shopify.com/s/files/1/0688/2417/0747/files/c4509bcc53dcb7bc3f9163a3c26ad11c.jpg?v=1723759026"
+      },
+      {
+        "id": 8776682111227,
+        "title": "0.3mL | 31G x 5/16\" - BD 320440 Ultra-Fine Insulin Syringes | 100 per Box",
+        "vendor": "BD",
+        "product_type": "Low Dead Space Needles",
+        "handle": "3ml-31g-320440-ultra-fine-insulin-syringes",
+        "tags": "aesthetic_n&s, insulin syringe",
+        "variants": [
+          {
+            "id": 46405971968251,
+            "product_id": 8776682111227,
+            "price": "72.27",
+            "sku": "320440",
+            "title": "Default Title"
+          }
+        ],
+        "images": "https://cdn.shopify.com/s/files/1/0688/2417/0747/files/40560386c3607d4f091ee52d347a3cf0.jpg?v=1723759036"
+      },
+      {
+        "id": 8776682176763,
+        "title": "0.5mL | 29G x 1/2\" - SOL-CARE 100002IM Insulin Safety Syringe | 100 per Box",
+        "vendor": "Sol-Millennium",
+        "product_type": "Insulin Syringe with Needle",
+        "handle": "0-5ml-29g-x-1-2-sol-care-100002im-insulin-safety-syringe",
+        "tags": "aesthetic_n&s",
+        "variants": [
+          {
+            "id": 46405972361467,
+            "product_id": 8776682176763,
+            "price": "65.55",
+            "sku": "100002IM",
+            "title": "Default Title"
+          }
+        ],
+        "images": "https://cdn.shopify.com/s/files/1/0688/2417/0747/files/0-5ml-or-29g-x-12-sol-care-100002im-insulin-safety-syringe-or-100-per-box.jpg?v=1723759039"
+      },
+      {
+        "id": 8776682373371,
+        "title": "0.5mL | 31G x 5/16\" - SOL-GUARD 2531516SG Insulin Safety Syringe (100pcs)",
+        "vendor": "Sol-Millennium",
+        "product_type": "Insulin Syringe with Needle",
+        "handle": "0-5ml-31g-x-5-16-insulin-safety-syringe",
+        "tags": "ST",
+        "variants": [
+          {
+            "id": 46405973115131,
+            "product_id": 8776682373371,
+            "price": "46.50",
+            "sku": "2531516SG",
+            "title": "Default Title"
+          }
+        ],
+        "images": 
+          "https://cdn.shopify.com/s/files/1/0688/2417/0747/files/0-5ml-or-31g-x-516-sol-guard-2531516sg-insulin-safety-syringe-100pcs--1.jpg?v=1723759048"
+      },
+      {
+        "id": 8776681783547,
+        "title": "0.9% Sodium Chloride Irrigation (1000ml)",
+        "vendor": "ICU Medical Inc",
+        "product_type": "Injection Saline",
+        "handle": "sodium-chloride-bottle-1000ml",
+        "tags": "",
+        "variants": [
+          {
+            "id": 46405970788603,
+            "product_id": 8776681783547,
+            "price": "16.99",
+            "sku": "07138019",
+            "title": "1 Bottle"
+          },
+          {
+            "id": 46405970821371,
+            "product_id": 8776681783547,
+            "price": "135.75",
+            "sku": "07138019-C",
+            "title": "1 Case(12 Bottles)"
+          }
+        ],
+        "images": "https://cdn.shopify.com/s/files/1/0688/2417/0747/files/0-9percent-sodium-chloride-irrigation-1000ml-07138019.jpg?v=1723759023"
+      }
+  ]
+}

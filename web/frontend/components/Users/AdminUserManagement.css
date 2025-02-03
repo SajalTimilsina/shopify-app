@@ -1,0 +1,46 @@
+/* src/components/AdminUserManagement.css */
+
+.admin-user-management {
+    padding: 20px;
+  }
+  
+  .admin-user-management h2 {
+    margin-bottom: 20px;
+  }
+  
+  .admin-user-management table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .admin-user-management th,
+  .admin-user-management td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .admin-user-management th {
+    background-color: #f2f2f2;
+  }
+  
+  .admin-user-management .action-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-right: 8px;
+  }
+  
+  .admin-user-management .delete-btn {
+    color: red;
+  }
+  
+  .admin-user-management .error {
+    color: red;
+  }
+  
+  .admin-user-management .success {
+    color: green;
+  }
+  
